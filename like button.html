@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgb(48, 106, 223);
+            border-radius: 50%;
+        }
+        .icon{
+            font-size: 70px;
+            cursor: pointer;
+        }
+        .icon:hover{
+            color: rgb(49, 110, 224);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <i class="fa-regular fa-thumbs-up icon" onclick="like()" id="like"></i>
+    </div>
+    <script>
+        function like(){
+            let like = document.getElementById("like");
+            if(like.className=='fa-regular fa-thumbs-up icon')
+            {
+                like.className='fa-solid fa-thumbs-up icon'
+            }
+            else{
+                like.className='fa-regular fa-thumbs-up icon'
+            }
+        }
+    </script>
+</body>
+</html>
